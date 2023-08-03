@@ -86,3 +86,14 @@ for (var ele in a) {
     }
 }
 
+//functions
+
+function fun_name(a,b){
+    console.log( a + b + 5 +"5"+ "Mayu")
+}
+
+fun_name(5,5)
+
+document.write("break time")
+// const val = document.getElementById("hello");
+
