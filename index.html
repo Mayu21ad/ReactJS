@@ -8,6 +8,20 @@
     
     <!-- all links should be specified in head tag -->
     <style>
+
+        .grid-container{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+
+        }
+
+        .grid-item{
+            background-color: blanchedalmond;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: centre;
+        }
         h1{
             font-size: 50px;
             color: #10093d;
@@ -39,7 +53,7 @@
 
     </style>
 </head>
-<body style="background-color: aqua;">
+<body style="background-image: url(asset/guitar.jpeg); background-repeat: no-repeat;">
     <p class="padTop">Montmartre</p>
     <img src="./asset/mtm.jpeg" alt="montmartre">
 <div>
@@ -54,6 +68,11 @@
         <li>t2</li>
         <li>ys</li>
     </ul>
+<div class="grid-container">
+    <div class="grid-item">jyothi</div>
+    <div class="grid-item">mayuri</div>
+</div>
+        
 <div>
     <ol type="A">
         <li>t1</li>
