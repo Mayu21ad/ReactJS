@@ -28,10 +28,34 @@ while(i <=a ){
     i++
 } 
 // declare i out of the loop
-array = [10,20]
-array.forEach(element => {
-    console.log(element)
+// array = [10,20]
+// array.forEach(element => {
+//     console.log(element)
     
-});
+// });
 // declare values out of foreach loop
 // => one liner function(fetch the elements)
+
+const array = [10, 20, "Mayu", 23.08, Date()]
+console.log("B4 Change:")
+for (var ele in array){
+    console.log(array[ele])
+}
+console.log("Af Change:")
+array.push("3rd Year")
+
+for (var ele of array){
+    console.log(ele)
+}
+array.pop()
+array.pop()
+console.log("AFTER POP:")
+
+if(array.length>0){
+    console.log("elements present")
+    for (var ele of array){
+        console.log(ele)
+    }
+} else {
+    console.log("no elements")
+}
