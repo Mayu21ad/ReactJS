@@ -59,3 +59,30 @@ if(array.length>0){
 } else {
     console.log("no elements")
 }
+
+//OBJECTS: ==>NESTED OBJ
+
+a = {
+    car: 'Audi',
+    airbags: 8,
+    color: 'black'
+}
+// console.log(a['color'])
+
+var s = 'color'
+console.log(a[s])
+a.sunroof = { isPresent: "YES", Shape: "Rectangle" };
+
+console.log(a.sunroof.isPresent);
+console.log(a.sunroof.Shape);
+
+for (var ele in a) {
+    console.log(ele + ":" + a[ele]);
+    if(typeof a[ele] === "object")
+    {
+        for (var val in a[ele]){
+            console.log(val +":" + a[ele][val])
+        }
+    }
+}
+
